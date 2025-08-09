@@ -7,14 +7,70 @@
   <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
-  <header class="absolute top-0 w-full h-20 border-3 border-white">
-
+  <!-- Header -->
+  <header class="absolute bg-white top-0 w-full px-2 py-2 md:px-10 lg:py-4 shadow-2xl z-20">
+   <div class="flex justify-between items-center">
+    <div class="">
+      <h1 class="font-semibold font-mono tracking-widest text-sm lg:text-2xl text-primary/80">Destino</h1>
+    </div>
+    <ul class="flex gap-1 md:gap-6 font-thin tracking-wider text-[10px] md:text-sm text-gray-900">
+      <li class="hover:text-primary hover:cursor-pointer">Home</li>
+      <li class="hover:text-primary hover:cursor-pointer">Travel plans</li>
+      <li class="hover:text-primary hover:cursor-pointer">Destinations</li>
+    </ul>
+     <ul class="flex gap-1 md:gap-5 tracking-wider text-[10px] md:text-sm font-thin text-gray-900">
+      <li class="hover:text-primary hover:cursor-pointer ">About</li>
+      <li class="hover:text-primary hover:cursor-pointer">Contact</li>
+    </ul>
   </header>
-  <main class="h-screen bg-[url('https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center">
 
+  <!-- Main section -->
+  <main class="flex relative justify-center items-center h-screen bg-[url('https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-520176152-20241220203148003.jpg?q=w_2000,c_fill/f_webp')] bg-cover bg-center ">
+    <div class="absolute inset-0 bg-black/55 "></div>
+    <div class="grid lg:grid-cols-7 p-2 lg:p-6 gap-15 relative mt-10 md:mt-0">
+      <div class="p-3 md:p-0 lg:col-span-3 flex flex-col items-start justify-center ">
+       <h1 class="text-white font-bold leading-7.5 md:leading-15 text-3xl md:text-5xl mb-1 md:mb-4">
+      Discover Your Next Adventure
+    </h1>
+    <p class="text-white relative text-sm md:text-xl mt-2">Explore breathtaking destinations around the world and create travel plans that turn your dreams into reality. Select the travel package you like. </p>
+    <button class=" text-white text-xs md:text-sm px-16 rounded-3xl py-3 mt-4 md:mt-8 font-semibold tracking-wider bg-primary/80 hover:cursor-pointer">Book Now</button>
+    </div>
+
+    <div class="relative lg:col-span-4 flex flex-col items-end">
+      <div class="py-1.5 md:py-2.5 px-4 md:px-10 mb-2 md:mb-6 bg-white/70 text-center text-black font-thin text-xs md:text-md tracking-wider rounded-lg shadow-lg">
+        Book your dream trip now and save 20%!
+    </div>
+ 
+    <div class=" flex overflow-y-scroll shadow-2xl ">
+      <img class="w-40 h-34 md:w-92 md:h-70" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGCgicnR2NxeWLkC4zCSeTHN7fjvD0twtlDYT0PlwAXZFlypS-nv-w3Jw&s=10">
+      <img class="w-40 h-34 md:w-92 md:h-70" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5jTRo5V44gi2ZB4Pjq4lMWL41TErTJAwmMCSPYtyiWm9qkYs1oftmQPP_&s=10">
+      <img class="w-40 h-34 md:w-92 md:h-70" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXLXwyGwLUeitt5OG2rsccF0Nf5rBliaWnfJI0-oykQ7-1mKetlYUC3_Y&s=10">
+      <img class="w-40 h-34 md:w-92 md:h-70" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwUqtLLLVtmSStzMjfDmOdRrgwLIdlf830HNYR4lujtSl5f0WE9X99QFk&s=10">
+      <img class="w-40 h-34 md:w-92 md:h-70" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5nQjp8hn4YKZE-b8Eyw2Y0dRXVcCwGEBTBcYbf_RSKtOsI2-t6ZLxnhS1&s=10">
+      <img class="w-40 h-34 md:w-92 md:h-70" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeLFndpazKlgORsZ2LcqQ1sSf70OBG1dVoeBg79SDwHBYdTMNoS7Lbk8Vr&s=10">
+    </div>
+    </div>
+    </div>
   </main>
-  <h1 class="text-amber-500 font-bold">Hi</h1>
 
+  <!-- Section -->
+ 
+  <section class="p-4">
+     <h1 class=" text-4xl font-bold mb-4">Travel Plans</h1>
+     <div class=" grid grid-cols-3 gap-6 h-100">
+      <div class="border">
+
+      </div>
+      <div class="border ">
+
+      </div>
+      <div class="border ">
+
+      </div>
+
+     </div>
+
+  </section>
 
   
 </body>
