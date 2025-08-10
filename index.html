@@ -8,7 +8,7 @@
 </head>
 <body>
   <!-- Header -->
-  <header class="absolute bg-white top-0 w-full px-2 py-2 md:px-10 lg:py-4 shadow-2xl z-20">
+  <header class="sticky bg-white top-0 w-full px-2 py-2 md:px-10 lg:py-4 shadow-2xl z-30">
    <div class="flex justify-between items-center">
     <div class="">
       <h1 class="font-semibold font-mono tracking-widest text-sm lg:text-2xl text-primary/80">Destino</h1>
@@ -19,8 +19,8 @@
       <li class="hover:text-primary hover:cursor-pointer">Destinations</li>
     </ul>
      <ul class="flex gap-1 md:gap-5 tracking-wider text-[10px] md:text-sm font-thin text-gray-900">
-      <li class="hover:text-primary hover:cursor-pointer ">About</li>
-      <li class="hover:text-primary hover:cursor-pointer">Contact</li>
+      <li class="hover:text-primary hover:cursor-pointer"> <a href="#about">About</a></li>
+      <li class="hover:text-primary hover:cursor-pointer"><a href="#about">Contact</a></li>
     </ul>
   </header>
 
@@ -29,18 +29,79 @@
     <div class="absolute inset-0 bg-black/55 "></div>
     <div class="grid lg:grid-cols-7 p-2 lg:p-6 gap-15 relative mt-10 md:mt-0">
       <div class="p-3 md:p-0 lg:col-span-3 flex flex-col items-start justify-center ">
-       <h1 class="text-white font-bold leading-7.5 md:leading-15 text-3xl md:text-5xl mb-1 md:mb-4">
+       <h1 class="text-white font-bold leading-7.5 md:leading-14 text-3xl md:text-5xl mb-1 md:mb-4">
       Discover Your Next Adventure
     </h1>
     <p class="text-white relative text-sm md:text-xl mt-2">Explore breathtaking destinations around the world and create travel plans that turn your dreams into reality. Select the travel package you like. </p>
+
+       <form class="flex mt-6 w-7/8">
+        <input type="search"
+          placeholder="Search destinations or packages"
+          class="flex-grow px-3 lg:px-6 py-3 rounded-l-3xl border border-white/70 bg-gray-300 focus:outline-none  text-xs lg:text-md placeholder-gray-500 "/>
+        <button
+          type="submit"
+          class="bg-black hover:bg-black/80 text-white px-7 rounded-r-3xl font-thin text-xs lg:text-sm tracking-wide hover:cursor-pointer" >
+          Search
+        </button>
+      </form>
+
+
     <button class=" text-white text-xs md:text-sm px-16 rounded-3xl py-3 mt-4 md:mt-8 font-semibold tracking-wider bg-primary/80 hover:cursor-pointer">Book Now</button>
+
+          <div class="flex flex-col lg:flex-row items-center gap-6 mt-6 text-white">
+        <!-- Star Ratings -->
+        <div class="flex items-center space-x-1">
+          <svg
+            class="w-5 h-5 text-yellow-500"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg" >
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.975a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.975c.3.922-.755 1.688-1.54 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.784.57-1.838-.196-1.539-1.118l1.287-3.975a1 1 0 00-.364-1.118L2.045 9.402c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.975z" />
+          </svg>
+          <svg
+            class="w-5 h-5 text-yellow-500"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.975a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.975c.3.922-.755 1.688-1.54 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.784.57-1.838-.196-1.539-1.118l1.287-3.975a1 1 0 00-.364-1.118L2.045 9.402c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.975z" />
+          </svg>
+          <svg
+            class="w-5 h-5 text-yellow-500"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.975a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.975c.3.922-.755 1.688-1.54 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.784.57-1.838-.196-1.539-1.118l1.287-3.975a1 1 0 00-.364-1.118L2.045 9.402c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.975z" />
+          </svg>
+          <svg
+            class="w-5 h-5 text-yellow-500"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg" >
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.975a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.975c.3.922-.755 1.688-1.54 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.784.57-1.838-.196-1.539-1.118l1.287-3.975a1 1 0 00-.364-1.118L2.045 9.402c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.975z" />
+          </svg>
+          <svg
+            class="w-5 h-5 text-gray-400"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.975a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.975c.3.922-.755 1.688-1.54 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.784.57-1.838-.196-1.539-1.118l1.287-3.975a1 1 0 00-.364-1.118L2.045 9.402c-.783-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.975z" />
+          </svg>
+        </div>
+
+        <!-- Partner logos (replace with your real logos) -->
+        <div class="flex items-center gap-2">
+          <img src="https://static.beebom.com/wp-content/uploads/2018/12/Lufthansa-Logo.jpg" alt="Airbnb" class=" w-18 h-6" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Enterprise_Rent-A-Car_Logo.svg/2560px-Enterprise_Rent-A-Car_Logo.svg.png" alt="Booking.com" class=" w-30 h-6" />
+          <img src="https://i.pinimg.com/474x/8b/f8/32/8bf832293e80320421a69c42365a8a0f.jpg" alt="Expedia" class="w-13 h-6 border border-white" />
+           <img src="https://www.nicepng.com/png/detail/235-2355689_american-express-mastercard-and-visa-logos-visa.png" alt="Expedia" class="w-22 h-6" />
+        </div>
+    </div>
     </div>
 
     <div class="relative lg:col-span-4 flex flex-col items-end">
       <div class="py-1.5 md:py-2.5 px-4 md:px-10 mb-2 md:mb-6 bg-white/70 text-center text-black font-thin text-xs md:text-md tracking-wider rounded-lg shadow-lg">
         Book your dream trip now and save 20%!
     </div>
- 
     <div class=" flex overflow-y-scroll shadow-2xl ">
       <img class="w-40 h-34 md:w-92 md:h-70" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGCgicnR2NxeWLkC4zCSeTHN7fjvD0twtlDYT0PlwAXZFlypS-nv-w3Jw&s=10">
       <img class="w-40 h-34 md:w-92 md:h-70" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5jTRo5V44gi2ZB4Pjq4lMWL41TErTJAwmMCSPYtyiWm9qkYs1oftmQPP_&s=10">
@@ -53,25 +114,315 @@
     </div>
   </main>
 
-  <!-- Section -->
- 
-  <section class="p-4">
-     <h1 class=" text-4xl font-bold mb-4">Travel Plans</h1>
-     <div class=" grid grid-cols-3 gap-6 h-100">
-      <div class="border">
+  <!-- Travel plans Section -->
+  <section class="py-15 flex flex-col items-center">
+    <h1 class="text-5xl font-light mb-4 pb-2 border-b-4 border-primary inline-block">
+    Travel Plans
+   </h1>
+    <p class="text-xs lg:text-md md:w-6/12 mb-12">Choose from a variety of exciting travel plans designed to suit every adventure seeker. Whether you crave nature, culture, or relaxation, we have the perfect journey for you. Book you destination now!</p>
 
-      </div>
-      <div class="border ">
+      <!-- Destination cards -->
+     <div class="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-7 w-11/12">
+        <!-- 1 -->
+        <div class="relative rounded-xl overflow-hidden h-80">
+          <div class="absolute inset-0 bg-cover bg-center"
+          style="background-image: url('https://images.travelandleisureasia.com/wp-content/uploads/sites/3/2023/11/27171455/skardu.jpg');"></div>
+          
+          <div class="absolute inset-0 bg-black/40 hover:bg-black/60 transition-colors duration-300 ease-in-out hover:cursor-pointer"></div>
+          <div class="relative z-20 p-4">
+            <div class="flex flex-col items-start justify-between gap-6 p-1">
+              <div>
+            <h2 class="text-white text-xl font-thin tracking-widest mt-4">Pakistan</h2>
+            <p class="text-white text-sm tracking-wide leading-4 font-thin mt-3">From Peaks to Plains: Your Ultimate Pakistan Adventure Awaits!</p>
+            </div>
 
-      </div>
-      <div class="border ">
+            <div class="space-y-1.5">
+            <p class="bg-black/65 rounded-3xl text-white px-5 py-1 font-thin shadow-xs"><i class="fa-solid fa-dollar-sign"></i>: <span class="text-sm">200 - 400</span></p>
+            <p class="bg-black/65 rounded-3xl text-white px-5 py-2 font-thin text-sm tracking-wider">Duration: 6-7 days</p>
+            </div>
 
-      </div>
+            <div class="w-full flex justify-center">
+            <button class=" text-gray-800 text-xs md:text-sm px-14 rounded-3xl py-2 mt-6 font-thin tracking-wider bg-white hover:cursor-pointer hover:bg-primary hover:text-white">Book Now</button>
+            </div>
+            <div class="absolute top-3 right-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+              20% Off
+            </div>
+            </div>
+            </div>
+        </div>
 
+        <!-- 2 -->
+        <div class="relative rounded-xl overflow-hidden h-80">
+          <div class="absolute inset-0 bg-cover bg-center"
+          style="background-image: url('https://theplanetd.com/images/beautiful-cities-in-switzerland-lugano.jpg');"></div>
+          
+          <div class="absolute inset-0 bg-black/50 hover:bg-black/60 transition-colors duration-300 ease-in-out hover:cursor-pointer"></div>
+          <div class="relative z-20 p-4">
+            <div class="flex flex-col items-start justify-between gap-6 p-1">
+              <div>
+            <h2 class="text-white text-xl font-thin tracking-widest mt-4">Switzerland</h2>
+            <p class="text-white text-sm tracking-wide leading-4 font-thin mt-3">From Peaks to Plains: Your Ultimate Pakistan Adventure Awaits!</p>
+            </div>
+
+            <div class="space-y-1.5">
+            <p class="bg-black/65 rounded-3xl text-white px-5 py-1 font-thin shadow-xs"><i class="fa-solid fa-dollar-sign"></i>: <span class="text-sm">400 - 500</span></p>
+            <p class="bg-black/65 rounded-3xl text-white px-5 py-2 font-thin text-sm tracking-wider">Duration: 7-9 days</p>
+            </div>
+
+            <div class="w-full flex justify-center">
+            <button class=" text-gray-800 text-xs md:text-sm px-14 rounded-3xl py-2 mt-6 font-thin tracking-wider bg-white hover:cursor-pointer hover:bg-primary hover:text-white">Book Now</button>
+            </div>
+            <div class="absolute top-3 right-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+              20% Off
+            </div>
+            </div>
+            </div>
+        </div>
+            
+        <!-- 3 -->
+        <div class="relative rounded-xl overflow-hidden h-80">
+          <div class="absolute inset-0 bg-cover bg-center"
+          style="background-image: url('https://www.onthegotours.com/repository/Blue-Mosque-in-Istanbul--Turkey--On-The-Go-Tours-629261524154670.jpg');"></div>
+          
+          <div class="absolute inset-0 bg-black/50 hover:bg-black/60 transition-colors duration-300 ease-in-out hover:cursor-pointer"></div>
+          <div class="relative z-20 p-4">
+            <div class="flex flex-col items-start justify-between gap-6 p-1">
+              <div>
+            <h2 class="text-white text-xl font-thin tracking-widest mt-4">Turkey</h2>
+            <p class="text-white text-sm tracking-wide leading-4 font-thin mt-3">From Peaks to Plains: Your Ultimate Pakistan Adventure Awaits!</p>
+            </div>
+
+            <div class="space-y-1.5">
+            <p class="bg-black/65 rounded-3xl text-white px-5 py-1 font-thin shadow-xs"><i class="fa-solid fa-dollar-sign"></i>: <span class="text-sm">400 - 500</span></p>
+            <p class="bg-black/65 rounded-3xl text-white px-5 py-2 font-thin text-sm tracking-wider">Duration: 7-9 days</p>
+            </div>
+
+            <div class="w-full flex justify-center">
+            <button class=" text-gray-800 text-xs md:text-sm px-14 rounded-3xl py-2 mt-6 font-thin tracking-wider bg-white hover:cursor-pointer hover:bg-primary hover:text-white">Book Now</button>
+            </div>
+            <div class="absolute top-3 right-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+              20% Off
+            </div>
+            </div>
+            </div>
+        </div>
+            
+        <!-- 4 -->
+        <div class="relative rounded-xl overflow-hidden h-80">
+          <div class="absolute inset-0 bg-cover bg-center"
+          style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH5UORibFIPUV815WnIMOBogQHwn7VY_LcIkGz1y0L5OTvGoBjhGJE-GBI&s=10');"></div>
+          
+          <div class="absolute inset-0 bg-black/50 hover:bg-black/60 transition-colors duration-300 ease-in-out hover:cursor-pointer"></div>
+          <div class="relative z-20 p-4">
+            <div class="flex flex-col items-start justify-between gap-6 p-1">
+              <div>
+            <h2 class="text-white text-xl font-thin tracking-widest mt-4">Italy</h2>
+            <p class="text-white text-sm tracking-wide leading-4 font-thin mt-3">From Peaks to Plains: Your Ultimate Pakistan Adventure Awaits!</p>
+            </div>
+
+            <div class="space-y-1.5">
+            <p class="bg-black/65 rounded-3xl text-white px-5 py-1 font-thin shadow-xs"><i class="fa-solid fa-dollar-sign"></i>: <span class="text-sm">400 - 500</span></p>
+            <p class="bg-black/65 rounded-3xl text-white px-5 py-2 font-thin text-sm tracking-wider">Duration: 7-9 days</p>
+            </div>
+
+            <div class="w-full flex justify-center">
+            <button class=" text-gray-800 text-xs md:text-sm px-14 rounded-3xl py-2 mt-6 font-thin tracking-wider bg-white hover:cursor-pointer hover:bg-primary hover:text-white">Book Now</button>
+            </div>
+            <div class="absolute top-3 right-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+              20% Off
+            </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="relative rounded-xl overflow-hidden h-80">
+          <div class="absolute inset-0 bg-cover bg-center"
+          style="background-image: url('https://static.toiimg.com/photo/59737203.cms');"></div>
+          
+          <div class="absolute inset-0 bg-black/50 hover:bg-black/60 transition-colors duration-300 ease-in-out hover:cursor-pointer"></div>
+          <div class="relative z-20 p-4">
+            <div class="flex flex-col items-start justify-between gap-6 p-1">
+              <div>
+            <h2 class="text-white text-xl font-thin tracking-widest mt-4">Thailand</h2>
+            <p class="text-white text-sm tracking-wide leading-4 font-thin mt-3">From Peaks to Plains: Your Ultimate Pakistan Adventure Awaits!</p>
+            </div>
+
+            <div class="space-y-1.5">
+            <p class="bg-black/65 rounded-3xl text-white px-5 py-1 font-thin shadow-xs"><i class="fa-solid fa-dollar-sign"></i>: <span class="text-sm">400 - 500</span></p>
+            <p class="bg-black/65 rounded-3xl text-white px-5 py-2 font-thin text-sm tracking-wider">Duration: 7-9 days</p>
+            </div>
+
+            <div class="w-full flex justify-center">
+            <button class=" text-gray-800 text-xs md:text-sm px-14 rounded-3xl py-2 mt-6 font-thin tracking-wider bg-white hover:cursor-pointer hover:bg-primary hover:text-white">Book Now</button>
+            </div>
+            <div class="absolute top-3 right-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+              20% Off
+            </div>
+            </div>
+            </div>
+        </div>
+            
+        <!-- 6 -->
+        <div class="relative rounded-xl overflow-hidden h-80">
+          <div class="absolute inset-0 bg-cover bg-center"
+          style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRZMslQLFFhrvnU9RQaQJHbHLmc3tF-SYAJhhMj4hNftU7SeAay_tWVK4&s=10');"></div>
+          
+          <div class="absolute inset-0 bg-black/50 hover:bg-black/60 transition-colors duration-300 ease-in-out hover:cursor-pointer"></div>
+          <div class="relative z-20 p-4">
+            <div class="flex flex-col items-start justify-between gap-6 p-1">
+              <div>
+            <h2 class="text-white text-xl font-thin tracking-widest mt-4">Spain</h2>
+            <p class="text-white text-sm tracking-wide leading-4 font-thin mt-3">From Peaks to Plains: Your Ultimate Pakistan Adventure Awaits!</p>
+            </div>
+
+            <div class="space-y-1.5">
+            <p class="bg-black/65 rounded-3xl text-white px-5 py-1 font-thin shadow-xs"><i class="fa-solid fa-dollar-sign"></i>: <span class="text-sm">400 - 500</span></p>
+            <p class="bg-black/65 rounded-3xl text-white px-5 py-2 font-thin text-sm tracking-wider">Duration: 7-9 days</p>
+            </div>
+
+            <div class="w-full flex justify-center">
+            <button class=" text-gray-800 text-xs md:text-sm px-14 rounded-3xl py-2 mt-6 font-thin tracking-wider bg-white hover:cursor-pointer hover:bg-primary hover:text-white">Book Now</button>
+            </div>
+            <div class="absolute top-3 right-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+              20% Off
+            </div>
+            </div>
+            </div>
+        </div> 
+
+        <!-- 7 -->
+        <div class="relative rounded-xl overflow-hidden h-80">
+          <div class="absolute inset-0 bg-cover bg-center"
+          style="background-image: url('https://www.planetware.com/wpimages/2019/02/germany-best-places-to-visit-cologne.jpg');"></div>
+          
+          <div class="absolute inset-0 bg-black/50 hover:bg-black/60 transition-colors duration-300 ease-in-out hover:cursor-pointer"></div>
+          <div class="relative z-20 p-4">
+            <div class="flex flex-col items-start justify-between gap-6 p-1">
+              <div>
+            <h2 class="text-white text-xl font-thin tracking-widest mt-4">Germany</h2>
+            <p class="text-white text-sm tracking-wide leading-4 font-thin mt-3">From Peaks to Plains: Your Ultimate Pakistan Adventure Awaits!</p>
+            </div>
+
+            <div class="space-y-1.5">
+            <p class="bg-black/65 rounded-3xl text-white px-5 py-1 font-thin shadow-xs"><i class="fa-solid fa-dollar-sign"></i>: <span class="text-sm">400 - 500</span></p>
+            <p class="bg-black/65 rounded-3xl text-white px-5 py-2 font-thin text-sm tracking-wider">Duration: 7-9 days</p>
+            </div>
+
+            <div class="w-full flex justify-center">
+            <button class=" text-gray-800 text-xs md:text-sm px-14 rounded-3xl py-2 mt-6 font-thin tracking-wider bg-white hover:cursor-pointer hover:bg-primary hover:text-white">Book Now</button>
+            </div>
+            <div class="absolute top-3 right-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+              20% Off
+            </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="relative rounded-xl overflow-hidden h-80">
+          <div class="absolute inset-0 bg-cover bg-center"
+          style="background-image: url('https://www.insightvacations.com/wp-content/uploads/2025/03/Large-Famous-Village-of-Castle-Combe-Wiltshire-England-1280782145-1024x683.jpg');"></div>
+          
+          <div class="absolute inset-0 bg-black/50 hover:bg-black/60 transition-colors duration-300 ease-in-out hover:cursor-pointer"></div>
+          <div class="relative z-20 p-4">
+            <div class="flex flex-col items-start justify-between gap-6 p-1">
+              <div>
+            <h2 class="text-white text-xl font-thin tracking-widest mt-4">England</h2>
+            <p class="text-white text-sm tracking-wide leading-4 font-thin mt-3">From Peaks to Plains: Your Ultimate Pakistan Adventure Awaits!</p>
+            </div>
+
+            <div class="space-y-1.5">
+            <p class="bg-black/65 rounded-3xl text-white px-5 py-1 font-thin shadow-xs"><i class="fa-solid fa-dollar-sign"></i>: <span class="text-sm">400 - 500</span></p>
+            <p class="bg-black/65 rounded-3xl text-white px-5 py-2 font-thin text-sm tracking-wider">Duration: 7-9 days</p>
+            </div>
+
+            <div class="w-full flex justify-center">
+            <button class=" text-gray-800 text-xs md:text-sm px-14 rounded-3xl py-2 mt-6 font-thin tracking-wider bg-white hover:cursor-pointer hover:bg-primary hover:text-white">Book Now</button>
+            </div>
+            <div class="absolute top-3 right-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+              20% Off
+            </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="relative rounded-xl overflow-hidden h-80">
+          <div class="absolute inset-0 bg-cover bg-center"
+          style="background-image: url('https://cdn.kimkim.com/files/a/images/ef80bf6d27c3b6eb60a534712d60d3604a757b2d/big-e6f8c61e72a89be6dfc9ed5c7c65a562.jpg');"></div>
+          
+          <div class="absolute inset-0 bg-black/50 hover:bg-black/60 transition-colors duration-300 ease-in-out hover:cursor-pointer"></div>
+          <div class="relative z-20 p-4">
+            <div class="flex flex-col items-start justify-between gap-6 p-1">
+              <div>
+            <h2 class="text-white text-xl font-thin tracking-widest mt-4">Greece</h2>
+            <p class="text-white text-sm tracking-wide leading-4 font-thin mt-3">From Peaks to Plains: Your Ultimate Pakistan Adventure Awaits!</p>
+            </div>
+
+            <div class="space-y-1.5">
+            <p class="bg-black/65 rounded-3xl text-white px-5 py-1 font-thin shadow-xs"><i class="fa-solid fa-dollar-sign"></i>: <span class="text-sm">400 - 500</span></p>
+            <p class="bg-black/65 rounded-3xl text-white px-5 py-2 font-thin text-sm tracking-wider">Duration: 7-9 days</p>
+            </div>
+
+            <div class="w-full flex justify-center">
+            <button class=" text-gray-800 text-xs md:text-sm px-14 rounded-3xl py-2 mt-6 font-thin tracking-wider bg-white hover:cursor-pointer hover:bg-primary hover:text-white">Book Now</button>
+            </div>
+            <div class="absolute top-3 right-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+              20% Off
+            </div>
+            </div>
+            </div>
+        </div>
+      
      </div>
-
   </section>
 
-  
+
+  <!-- About -->
+
+
+
+
+  <!-- Footer -->
+   <div id="about" class="w-full bg-black/80 px-3 lg:px-20">
+    <h1 class="font-semibold font-mono tracking-widest text-2xl lg:text-2xl text-primary/80 pt-10 mb-6">Destino</h1>
+   
+    <div class="grid grid-cols-2 lg:grid-cols-4 font-thin border-white text-white text-xs lg:text-sm ">
+    <ul class="space-y-5">
+      <li class="hover:cursor-pointer hover:text-primary/80">Adventure Tours</li>
+      <li class="hover:cursor-pointer hover:text-primary/80">Family Trips</li>
+      <li class="hover:cursor-pointer hover:text-primary/80">Cultural Heritage</li>
+      <li class="hover:cursor-pointer hover:text-primary/80">Beach Escapes</li>
+    </ul>
+
+    <ul class="space-y-5">
+      <li class="hover:cursor-pointer hover:text-primary/80">FAQs</li>
+      <li class="hover:cursor-pointer hover:text-primary/80">Terms & Conditions</li>
+      <li class="hover:cursor-pointer hover:text-primary/80">Privacy Policy</li>
+      <li class="hover:cursor-pointer hover:text-primary/80">Refund & Cancellation Policy</li>
+    </ul>
+
+     <ul class="space-y-5">
+      <li class="hover:cursor-pointer hover:text-primary/80">Phone & WhatsApp</li>
+      <li class="hover:cursor-pointer hover:text-primary/80">Email Address</li>
+      <li class="hover:cursor-pointer hover:text-primary/80">Office Address</li>
+      <li class="hover:cursor-pointer hover:text-primary/80">Business Hours</li>
+    </ul>
+
+    <ul class="space-y-5">
+      <li class="hover:cursor-pointer hover:text-primary/80">About Us</li>
+      <li class="hover:cursor-pointer hover:text-primary/80">Blog/Articles</li>
+      <li class="hover:cursor-pointer hover:text-primary/80">Contact Us</li>
+    </ul>
+     </div>
+
+    <p class="text-center font-thin text-[10px] md:text-xs text-gray-300 mt-12 pb-4 tracking-wide">
+     © 2025 Destino Travel — This is a practice project created for learning.
+    </p>
+
+   </div>
+
+  <script src="https://kit.fontawesome.com/31fe0a6392.js" crossorigin="anonymous"></script>
 </body>
 </html>
