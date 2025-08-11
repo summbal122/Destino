@@ -927,6 +927,9 @@
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
   }
@@ -1346,6 +1349,11 @@
   .md\:h-70 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 70);
+    }
+  }
+  .md\:h-screen {
+    @media (width >= 48rem) {
+      height: 100vh;
     }
   }
   .md\:w-4\/8 {
@@ -1838,6 +1846,16 @@
   .lg\:py-15 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 15);
+    }
+  }
+  .lg\:pt-0 {
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:pt-2 {
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 2);
     }
   }
   .lg\:text-2xl {
