@@ -37,13 +37,21 @@ It demonstrates responsive design principles, clean UI, and smooth user interact
 
 **Main Section**
 ![alt text](image.png)
+___
+
 **Why Travel With Us**
 ![alt text](image-1.png)
-**Travel Plans Section**
+___ 
+
+**Travel Plans**
 ![alt text](image-2.png)
 ![alt text](image-3.png)
-**FAQn**
+___
+
+**FAQ**
 ![alt text](image-4.png)
+___
+
 **Footer**
 ![alt text](image-5.png)
 
