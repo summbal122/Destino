@@ -27,7 +27,6 @@ It demonstrates responsive design principles, clean UI, and smooth user interact
 ##  Features
 - Fully responsive layout
 - Travel plans section with hover effects
-- ℹAbout section with imagery and text
 - FAQ accordion section
 - Footer with navigation & social icons
 
